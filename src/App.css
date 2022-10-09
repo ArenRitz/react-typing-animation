@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  font-size: 6rem;
+}
+
+.App span {
+  
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  
+}
+
+
+
+.blink:after {
+  content: '|';
+  color: orchid;
+  animation: blink 1s step-end infinite;
+
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+  
